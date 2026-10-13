@@ -7,30 +7,22 @@
     <title>Document</title>
   </head>
   <body>
-    <header class=" flex justify-between items-center p-4 bg-blue-300">
-      <h1 class="text-2xl font-bold">Logo</h1>
+    <header class="flex  justify-center md:justify-between p-8 bg-white border-b border-[#164E63]">
+        <div>
+            <img src="./Images/Brand.svg" alt="logo">
 
-      <ul class="flex gap-4">
-        <li>
-          <a href="test">home</a>
-        </li>
-        <li>
-          <a href="test">contact</a>
-        </li>
+        </div>
 
-        <li>
-          <a href="test">activities</a>
-        </li>
+        <ul class="hidden md:flex gap-3 text-lg text-gray-500 ">
+            <li class="hover:text-[#164E63]"><a href="test">Faq</a></li>
+            <li class="hover:text-[#164E63]"><a href="test">Activities</a></li>
+            <li class="hover:text-[#164E63]"><a href="test">details</a></li>
+            <li class="hover:text-[#164E63]"><a href="test">Home</a></li>
+        </ul>
 
-        <li>
-          <a href="test">Task</a>
-        </li>
-      </ul>
-
-      <button class="p-2 rounded-2xl text-white bg-green-600"> reserve</button>
+        <button class="hidden md:block bg-[#164E63] py-2 px-4 rounded-2xl font-semibold text-white  hover:bg-[#36abd6]">Plan your trip!</button>
     </header>
     <footer>
-        test
     </footer>
   </body>
 </html>
