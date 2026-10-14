@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
-.div {
-  display: flex;
+@theme {
+  --color-primary: #164E63;
+  --color-secondary: #38BFC0;
+
 }
