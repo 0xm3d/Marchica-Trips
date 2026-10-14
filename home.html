@@ -1,28 +1,54 @@
-<!doctype html>
+</html<!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
-  </head>
-  <body>
-    <header class="flex  justify-center md:justify-between p-8 bg-white border-b border-[#164E63]">
-        <div>
-            <img src="./Images/Brand.svg" alt="logo">
+</head>
 
+<body>
+    <header class="flex justify-center md:justify-between p-8 bg-white border-b border-[#164E63]">
+        <div>
+            <img src="./Images/Brand.svg" alt="logo" />
         </div>
 
-        <ul class="hidden md:flex gap-3 text-lg text-gray-500 ">
+        <ul class="hidden md:flex gap-3 text-lg text-gray-500">
             <li class="hover:text-[#164E63]"><a href="test">Faq</a></li>
             <li class="hover:text-[#164E63]"><a href="test">Activities</a></li>
             <li class="hover:text-[#164E63]"><a href="test">details</a></li>
             <li class="hover:text-[#164E63]"><a href="test">Home</a></li>
         </ul>
-
-        <button class="hidden md:block bg-[#164E63] py-2 px-4 rounded-2xl font-semibold text-white  hover:bg-[#36abd6]">Plan your trip!</button>
     </header>
-    <footer>
-    </footer>
-  </body>
+
+    <!-- Hero -->
+    <section class="mx-auto mt-[50px] w-full max-w-[1140px] px-6">
+        <article class="flex justify-between ">
+            <div>
+                <p
+                    class="mb-7 flex items-center gap-2.5 text-caption uppercase tracking-wider text-primary before:block before:h-0.5 before:w-6 before:bg-secondary before:content-['']">
+                    Nador's Mediterranean escape
+                </p>
+                <h1 class="mb-7 font-heading text-5xl leading-[1.15] text-primary lg:text-[3.4rem]">
+                    Discover the Magic of Marchica
+                </h1>
+                <p class="max-w-md text-body leading-relaxed text-text">
+                    Quiet lagoon waters, mountain trails and a taste of Morocco.
+                    Discover Nador with thoughtfully crafted experiences and local
+                    guides who make you feel at home.
+                </p>
+                <div>
+                    <button>Explore Activities</button>
+                    <button>Plan your trip</button>
+                </div>
+                <p>Locally rooted. Naturally unforgettable.</p>
+            </div>
+            <div class="bg-[url('/Images/hero-section.jpg')] bg-cover bg-center bg-no-repeat h-full w-full">
+            </div>
+        </article>
+    </section>
+    <footer></footer>
+</body>
+
 </html>
