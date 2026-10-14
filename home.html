@@ -1,12 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
-</head>
-<body>
-    <div>hello from home page</div>
-</body>
+  </head>
+  <body>
+    <header class="flex  justify-center md:justify-between p-8 bg-white border-b border-[#164E63]">
+        <div>
+            <img src="./Images/Brand.svg" alt="logo">
+
+        </div>
+
+        <ul class="hidden md:flex gap-3 text-lg text-gray-500 ">
+            <li class="hover:text-[#164E63]"><a href="test">Faq</a></li>
+            <li class="hover:text-[#164E63]"><a href="test">Activities</a></li>
+            <li class="hover:text-[#164E63]"><a href="test">details</a></li>
+            <li class="hover:text-[#164E63]"><a href="test">Home</a></li>
+        </ul>
+
+        <button class="hidden md:block bg-[#164E63] py-2 px-4 rounded-2xl font-semibold text-white  hover:bg-[#36abd6]">Plan your trip!</button>
+    </header>
+    <footer>
+    </footer>
+  </body>
 </html>
