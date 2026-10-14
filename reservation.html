@@ -8,15 +8,53 @@
 </head>
 <body>
     <main>
-        <header class="p-7 bg-amber-200">
+        <header class="p-16 bg-amber-200">
 
         </header>
-        <section class="text-center text-4xl  font-bold font-heading pb-10  m-0 p-0 bg-of-white text-primary ">
-            <p>______________________</p>
-            <h1 class="text-6xl mt-6">Réserver Votre Activité</h1>
+        <section class="text-center text-4xl   font-heading pb-10  m-0 p-0 bg-of-white text-primary ">
+            <p class="text-1px">______________________</p>
+            <h1 class="text-6xl mt-6 font-bold">Réserver Votre Activité</h1>
             <p>______________________</p>
         </section>
-        
+        <section class="pb-10   p-15 bg-of-white">
+            <div class=" bg-primary mx-50  rounded-4xl pt-7">
+                <button class="m-10 mt-4 p-3 py-1 mx-10 text-primary bg-secondary font-bold border rounded-full">Book your experience</button>
+                <h2 class="text-5xl font-extrabold text-white font-heading pb-5 px-10 ">Tell us a little about your trip</h2>
+                <p class=" text-white font-lora px-10 pb-7 ">We’ll tailor the details so your day in the Marchica Lagoon feels effortless, local, and memorable.</p>
+
+                <form action="" class="  bg-sand p-6 pb-9 grid grid-cols-1 gap-2 rounded-b-4xl " >
+                    <label for="nom">Name</label>
+                    <input type="text" id="nom" name="nom"  placeholder ="entrer your Name here" class="border rounded-lg  mb-5 p-3 bg-white ">
+
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" placeholder ="entrer your email here" class=" border rounded-lg mb-5 p-3 bg-white">
+
+                    <label for="Address">Address</label>
+                    <input type="text" id="Address" name="Address" placeholder ="entrer your Address here" class="border rounded-lg mb-5 p-3 bg-white">
+                    <div class="grid grid-cols-2 gap-5">
+                    <label for="Address">Activities</label>
+                    <label for="Persones">Persones</label>
+                    <select id="ville" name="ville"   class=" border rounded-lg mb-5 p-3 bg-white">
+                        <option value="Kayaking">Kayaking</option>
+                        <option value="Boat Trips">Boat Trips</option>
+                        <option value="Gourougou Hiking">Gourougou Hiking</option>
+                        <option value="Culinary Experiences">Culinary Experiences</option>
+                        <option value="Surfing Session">Surfing Session</option>
+                        <option value="Jet Skiing">Jet Skiing</option>
+                        <option value="Flyboarding">Flyboarding</option>
+                    </select>
+
+                    <input type="number" id="nbPersonn" class=" rounded-lg border mb-5 p-3 bg-white">
+
+                    
+                    </div>
+                    <div class=" m-1  gap-5 flex flex-wrap">
+                        <a href="./home.html" class=" w-1/5 p-4 text-center  text-4xl bg-primary text-of-white font-medium font-lora   rounded-lg ">Reserve</a>
+                        <a href="./details.html" class="w-3/4 text-4xl text-center p-4 bg-primary text-of-white font-medium font-lora   rounded-lg ">Plan your trip</a>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>
