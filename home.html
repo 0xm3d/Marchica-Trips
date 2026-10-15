@@ -1,28 +1,432 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="flex  justify-center md:justify-between p-8 bg-white border-b border-[#164E63]">
-        <div>
-            <img src="./Images/Brand.svg" alt="logo">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Discover kayaking, boat trips, hiking and culinary experiences around Marchica Lagoon in Nador, Morocco." />
+  <title>Marchica Trips | Discover Nador</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body class="bg-of-white font-body text-text antialiased">
+
+  <!-- ============ HEADER ============ -->
+  <header>
+    <nav aria-label="Main navigation" class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+      <a href="/home.html" aria-label="Marchica Trips home">
+        <img src="/Images/Brand.svg" alt="Marchica Trips" class="h-10">
+      </a>
+
+      <!-- Links: hidden on mobile -->
+      <ul class="hidden items-center gap-8 text-label md:flex">
+        <li><a href="/home.html" class="hover:text-primary">Home</a></li>
+        <li><a href="/activities.html" class="hover:text-primary">Activities</a></li>
+        <li><a href="/details.html" class="hover:text-primary">Details</a></li>
+        <li><a href="/faq.html" class="hover:text-primary">FAQ</a></li>
+      </ul>
+
+      <a href="/reservation.html"
+        class="hidden min-h-14 items-center rounded-lg bg-primary px-6 text-label font-semibold text-white hover:bg-green md:inline-flex">
+        Plan your trip
+      </a>
+
+      <!-- Mobile menu, no JavaScript -->
+      <details class="relative md:hidden">
+        <summary aria-label="Open navigation menu"
+          class="flex h-12 w-12 cursor-pointer list-none items-center justify-center rounded-lg border border-text/10 text-primary [&::-webkit-details-marker]:hidden">
+          <i class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
+        </summary>
+
+        <ul
+          class="absolute right-0 top-full z-20 mt-2 flex w-64 flex-col gap-1 rounded-card border border-text/10 bg-white p-3 shadow-card">
+          <li><a href="/home.html" class="flex min-h-12 items-center rounded-lg px-3 hover:bg-sand">Home</a></li>
+          <li><a href="/activities.html" class="flex min-h-12 items-center rounded-lg px-3 hover:bg-sand">Activities</a>
+          </li>
+          <li><a href="/details.html" class="flex min-h-12 items-center rounded-lg px-3 hover:bg-sand">Details</a></li>
+          <li><a href="/faq.html" class="flex min-h-12 items-center rounded-lg px-3 hover:bg-sand">FAQ</a></li>
+          <li><a href="/reservation.html"
+              class="flex min-h-12 items-center rounded-lg bg-primary px-3 font-semibold text-white">Plan your trip</a>
+          </li>
+        </ul>
+      </details>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO ============ -->
+    <section id="home" aria-labelledby="hero-title"
+      class="mx-auto grid max-w-7xl gap-8 px-6 pb-10 pt-4 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-10 lg:pt-6">
+
+      <!-- Text -->
+      <div>
+        <p class="flex items-center gap-3 text-caption uppercase tracking-wide text-text/70">
+          <span aria-hidden="true" class="h-px w-5 bg-secondary"></span>
+          Nador's Mediterranean escape
+        </p>
+
+        <h1 id="hero-title"
+          class="mt-6 max-w-xl font-heading text-[12.5rem] leading-[1.15] text-primary md:text-5xl lg:text-[4rem] lg:leading-[1.1]">
+          Discover the Magic of Marchica
+        </h1>
+
+        <p class="mt-6 max-w-2xl text-lg leading-[1.7] lg:max-w-lg">
+          Quiet lagoon waters, mountain trails and a taste of Morocco.
+          Discover Nador with thoughtfully crafted experiences and local
+          guides who make you feel at home.
+        </p>
+
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="#experiences"
+            class="inline-flex min-h-14 w-full items-center justify-center gap-3 rounded-lg bg-primary px-6 text-label font-semibold text-white hover:bg-green sm:w-auto">
+            Explore experiences
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+
+          <a href="/reservation.html"
+            class="inline-flex min-h-14 w-full items-center justify-center rounded-lg border border-primary px-6 text-label font-semibold text-primary hover:bg-sand sm:w-auto">
+            Plan your trip
+          </a>
+        </div>
+
+        <p class="mt-6 flex items-center gap-2 text-caption text-green">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          Locally rooted. Naturally unforgettable.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <figure class="relative">
+        <img src="/Images/hero-section.jpg"
+          alt="The turquoise waters of Marchica Lagoon surrounded by mountains and coastal vegetation"
+          fetchpriority="high" class="aspect-[6/5] w-full rounded-3xl object-cover md:aspect-[16/9] lg:aspect-[6/5]">
+
+        <figcaption class="absolute bottom-4 left-4 flex items-center gap-3 rounded-lg bg-white px-4 py-3 shadow-card">
+          <i class="fa-solid fa-location-dot text-primary" aria-hidden="true"></i>
+          <span>
+            <span class="block text-label font-semibold leading-tight text-primary">Marchica Lagoon</span>
+            <span class="block text-caption leading-tight text-text/70">Nador · Morocco</span>
+          </span>
+        </figcaption>
+      </figure>
+
+    </section>
+
+    <!-- ============ VALUES STRIP ============ -->
+    <section aria-label="Our values" class="bg-sand">
+      <ul
+        class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-5 text-label text-primary sm:flex-row sm:justify-between lg:px-10 lg:py-6">
+
+        <li class="flex items-center gap-2">
+          <i class="fa-regular fa-compass fa-fw" aria-hidden="true"></i>
+          Led by local guides
+        </li>
+
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-leaf fa-fw" aria-hidden="true"></i>
+          Thoughtful, small-group trips
+        </li>
+
+        <li class="flex items-center gap-2">
+          <i class="fa-regular fa-sun fa-fw" aria-hidden="true"></i>
+          A warm Moroccan welcome
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ============ EXPERIENCES ============ -->
+    <section id="experiences" aria-labelledby="experiences-title"
+      class="mx-auto max-w-7xl px-6 py-14 lg:px-10 lg:py-20">
+
+      <header>
+        <p class="text-caption uppercase tracking-wide text-green">Find your kind of adventure</p>
+        <h2 id="experiences-title"
+          class="mt-3 font-heading text-3xl leading-tight text-primary md:text-4xl lg:text-[2.5rem]">
+          One destination. So many ways to feel it.
+        </h2>
+        <p class="mt-4 text-label leading-relaxed">
+          From slow mornings on the water to evenings around the table, make Marchica your own.
+        </p>
+      </header>
+
+      <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+
+        <!-- Kayaking -->
+        <article class="flex flex-col overflow-hidden rounded-card bg-white shadow-card">
+          <img src="/Images/ex01.jpg" alt="Visitors kayaking across the turquoise waters of the lagoon" loading="lazy"
+            class="aspect-[3/2] w-full object-cover">
+          <div class="flex flex-1 flex-col p-5">
+            <p class="text-caption uppercase tracking-wide text-text/70">On the lagoon</p>
+            <h3 class="mt-2 font-heading text-2xl text-primary">Kayaking</h3>
+            <p class="mt-2 flex-1 text-label leading-relaxed">
+              Paddle quiet turquoise waters and discover the lagoon at your own pace.
+            </p>
+            <p class="mt-3 flex items-center gap-2 text-caption text-green">
+              <i class="fa-regular fa-clock" aria-hidden="true"></i>
+              2 hours · Easy pace
+            </p>
+            <a href="/activities.html#kayaking"
+              class="mt-4 flex min-h-12 items-center justify-between border-t border-text/10 pt-3 text-label font-semibold text-primary hover:text-green">
+              Explore activity
+              <i class="fa-solid fa-arrow-right -rotate-45" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Boat trips -->
+        <article class="flex flex-col overflow-hidden rounded-card bg-white shadow-card">
+          <img src="/Images/ex02.jpg" alt="A traditional boat on the calm waters of Marchica Lagoon" loading="lazy"
+            class="aspect-[3/2] w-full object-cover">
+          <div class="flex flex-1 flex-col p-5">
+            <p class="text-caption uppercase tracking-wide text-text/70">Along the coast</p>
+            <h3 class="mt-2 font-heading text-2xl text-primary">Boat Trips</h3>
+            <p class="mt-2 flex-1 text-label leading-relaxed">
+              Set sail for hidden corners, coastal views and a fresh sea breeze.
+            </p>
+            <p class="mt-3 flex items-center gap-2 text-caption text-green">
+              <i class="fa-regular fa-clock" aria-hidden="true"></i>
+              Half day · All ages
+            </p>
+            <a href="/activities.html#boat-trips"
+              class="mt-4 flex min-h-12 items-center justify-between border-t border-text/10 pt-3 text-label font-semibold text-primary hover:text-green">
+              Explore activity
+              <i class="fa-solid fa-arrow-right -rotate-45" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Hiking -->
+        <article class="flex flex-col overflow-hidden rounded-card bg-white shadow-card">
+          <img src="/Images/ex03.jpg" alt="Hikers following a forest trail in the Gourougou hills" loading="lazy"
+            class="aspect-[3/2] w-full object-cover">
+          <div class="flex flex-1 flex-col p-5">
+            <p class="text-caption uppercase tracking-wide text-text/70">Into the hills</p>
+            <h3 class="mt-2 font-heading text-2xl text-primary">Gourougou Hiking</h3>
+            <p class="mt-2 flex-1 text-label leading-relaxed">
+              Follow forest trails to sweeping views of Nador and the Mediterranean.
+            </p>
+            <p class="mt-3 flex items-center gap-2 text-caption text-green">
+              <i class="fa-regular fa-clock" aria-hidden="true"></i>
+              Half day · Moderate
+            </p>
+            <a href="/activities.html#hiking"
+              class="mt-4 flex min-h-12 items-center justify-between border-t border-text/10 pt-3 text-label font-semibold text-primary hover:text-green">
+              Explore activity
+              <i class="fa-solid fa-arrow-right -rotate-45" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Culinary -->
+        <article class="flex flex-col overflow-hidden rounded-card bg-white shadow-card">
+          <img src="/Images/ex04.jpg" alt="Traditional Moroccan dishes and mint tea served at an outdoor table"
+            loading="lazy" class="aspect-[3/2] w-full object-cover">
+          <div class="flex flex-1 flex-col p-5">
+            <p class="text-caption uppercase tracking-wide text-text/70">A taste of Morocco</p>
+            <h3 class="mt-2 font-heading text-2xl text-primary">Culinary Experiences</h3>
+            <p class="mt-2 flex-1 text-label leading-relaxed">
+              Share local flavors, mint tea and the stories behind a Moroccan table.
+            </p>
+            <p class="mt-3 flex items-center gap-2 text-caption text-green">
+              <i class="fa-regular fa-clock" aria-hidden="true"></i>
+              3 hours · All ages
+            </p>
+            <a href="/activities.html#culinary"
+              class="mt-4 flex min-h-12 items-center justify-between border-t border-text/10 pt-3 text-label font-semibold text-primary hover:text-green">
+              Explore activity
+              <i class="fa-solid fa-arrow-right -rotate-45" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="mt-8 text-caption">
+        Suggested durations. We'll tailor the details to your group, the season and the weather.
+      </p>
+
+    </section>
+    <!-- ============ GUEST STORIES ============ -->
+    <section id="stories" aria-labelledby="stories-title" class="bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-14 lg:px-10 lg:py-20">
+
+        <header>
+          <p class="text-caption uppercase tracking-wide text-green">Moments that stay with you</p>
+          <h2 id="stories-title"
+            class="mt-3 font-heading text-3xl leading-tight text-primary md:text-4xl lg:text-[2.5rem]">
+            A place to make memories.
+          </h2>
+          <p class="mt-4 text-label leading-relaxed">
+            A glimpse of the kind of journey we'd love to create for you.
+          </p>
+        </header>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-2">
+
+          <!-- Story 1 -->
+          <article class="rounded-card bg-of-white p-6 lg:p-8">
+            <i class="fa-solid fa-quote-right text-2xl text-text/40" aria-hidden="true"></i>
+
+            <blockquote class="mt-4 font-heading text-lg leading-relaxed md:text-xl lg:text-2xl">
+              &ldquo;The lagoon was so peaceful. Kayaking at a gentle pace and hearing our guide's stories made it the
+              highlight of our time in Nador.&rdquo;
+            </blockquote>
+
+            <div class="mt-6 flex items-center gap-3">
+              <span aria-hidden="true"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-sand font-heading text-primary">S</span>
+              <div>
+                <p class="text-label font-semibold text-primary">Sofia</p>
+                <p class="text-caption text-text/70">Kayaking · Sample guest story</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Story 2 -->
+          <article class="rounded-card bg-of-white p-6 lg:p-8">
+            <i class="fa-solid fa-quote-right text-2xl text-text/40" aria-hidden="true"></i>
+
+            <blockquote class="mt-4 font-heading text-lg leading-relaxed md:text-xl lg:text-2xl">
+              &ldquo;A beautiful walk above the coast, followed by mint tea and a table full of local flavors. It felt
+              like being welcomed by friends.&rdquo;
+            </blockquote>
+
+            <div class="mt-6 flex items-center gap-3">
+              <span aria-hidden="true"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-sand font-heading text-primary">A</span>
+              <div>
+                <p class="text-label font-semibold text-primary">Amine</p>
+                <p class="text-caption text-text/70">Hiking &amp; food · Sample guest story</p>
+              </div>
+            </div>
+          </article>
 
         </div>
 
-        <ul class="hidden md:flex gap-3 text-lg text-gray-500 ">
-            <li class="hover:text-[#164E63]"><a href="test">Faq</a></li>
-            <li class="hover:text-[#164E63]"><a href="test">Activities</a></li>
-            <li class="hover:text-[#164E63]"><a href="test">details</a></li>
-            <li class="hover:text-[#164E63]"><a href="test">Home</a></li>
-        </ul>
+        <p class="mt-8 text-caption">
+          Illustrative sample testimonials for this design. These are not verified customer reviews.
+        </p>
 
-        <button class="hidden md:block bg-[#164E63] py-2 px-4 rounded-2xl font-semibold text-white  hover:bg-[#36abd6]">Plan your trip!</button>
-    </header>
-    <footer>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING CTA ============ -->
+    <section id="booking" aria-labelledby="booking-title" class="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+      <div
+        class="relative overflow-hidden rounded-3xl bg-primary px-6 py-8 text-white sm:px-10 md:flex md:items-center md:justify-between md:gap-8 lg:px-12">
+
+        <!-- Decorative waves -->
+        <i class="fa-solid fa-water pointer-events-none absolute -bottom-6 right-4 text-[9rem] text-secondary opacity-20"
+          aria-hidden="true"></i>
+
+        <div class="relative">
+          <p class="text-caption font-semibold uppercase tracking-wide">Your journey starts here</p>
+          <h2 id="booking-title" class="mt-3 font-heading text-3xl leading-tight md:text-4xl lg:text-[2.5rem]">
+            Let's plan your Marchica escape.
+          </h2>
+          <p class="mt-4 max-w-xl text-label leading-relaxed">
+            Tell us what you love. We'll help you find the right experiences, at your pace.
+          </p>
+        </div>
+
+        <div class="relative mt-8 md:mt-0 md:shrink-0">
+          <a href="/reservation.html"
+            class="inline-flex min-h-14 w-full items-center justify-center gap-3 rounded-lg bg-white px-8 text-label font-semibold text-primary hover:bg-sand md:w-auto">
+            Plan your trip
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <p class="mt-3 text-caption">Personal guidance. No pressure.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+      <!-- ============ FOOTER ============ -->
+    <footer id="contact" class="bg-sand">
+      <div class="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+
+        <div class="grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-[1.4fr_1fr_1fr] md:gap-x-8">
+
+          <!-- Brand -->
+          <div class="col-span-2 md:col-span-1">
+            <a href="/home.html" aria-label="Marchica Trips home" class="inline-block">
+              <img src="/Images/Brand.svg" alt="Marchica Trips" class="h-10">
+            </a>
+
+            <p class="mt-4 text-label leading-relaxed">
+              Local journeys. Lasting memories.<br>
+              Your welcome to Nador and the Marchica Lagoon.
+            </p>
+
+            <ul class="mt-5 flex gap-3">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  aria-label="Instagram"
+                  class="flex h-12 w-12 items-center justify-center rounded-full border border-primary text-primary hover:bg-white"
+                >
+                  <i class="fa-brands fa-instagram text-xl" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  aria-label="Facebook"
+                  class="flex h-12 w-12 items-center justify-center rounded-full border border-primary text-primary hover:bg-white"
+                >
+                  <i class="fa-brands fa-facebook-f text-xl" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Explore -->
+          <nav aria-label="Footer navigation">
+            <h2 class="text-caption font-medium text-primary">Explore</h2>
+            <ul class="mt-3">
+              <li><a href="#experiences" class="flex min-h-12 items-center text-label hover:text-primary">Experiences</a></li>
+              <li><a href="#stories" class="flex min-h-12 items-center text-label hover:text-primary">Guest stories</a></li>
+              <li><a href="#contact" class="flex min-h-12 items-center text-label hover:text-primary">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact -->
+          <address class="not-italic">
+            <h2 class="text-caption font-medium text-primary">Find us in Nador</h2>
+            <p class="mt-3 text-label leading-relaxed">
+              Marchica Lagoon<br>
+              Nador, Morocco
+            </p>
+            <a
+              href="/reservation.html"
+              class="mt-4 inline-flex min-h-12 items-center gap-2 text-label font-semibold text-primary hover:text-green"
+            >
+              Let's talk
+              <i class="fa-solid fa-arrow-right -rotate-45" aria-hidden="true"></i>
+            </a>
+          </address>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-10 flex flex-col gap-3 border-t border-primary/15 pt-6 text-caption sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 Marchica Trips. All rights reserved.</p>
+          <p>From Nador, with warmth.</p>
+        </div>
+
+      </div>
     </footer>
-  </body>
+</body>
+
 </html>
