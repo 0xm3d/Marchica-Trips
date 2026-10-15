@@ -6,7 +6,41 @@
      <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
 </head>
-<body>
-    hello from reservations
+<header class="flex justify-between p-8 bg-white border-b border-primary">
+      <div>
+        <img src="./Images/Brand.svg" alt="logo" />
+      </div>
+      <input type="checkbox" id="menu" class="peer hidden" />
+        <label for="menu" class="block peer-checked:hidden cursor-pointer md:hidden">
+            <svg
+            class="peer-checked:hidden md:hidden"
+            viewBox="0 0 100 80"
+            width="40"
+            height="40"
+            >
+            <rect width="100" height="5"></rect>
+            <rect y="30" width="100" height="5"></rect>
+            <rect y="60" width="100" height="5"></rect>
+            </svg>
+
+
+        </label>
+
+        <label for="menu" class="hidden peer-checked:block  cursor-pointer md:hidden">
+            <h class=" text-4xl p-4 cursor-pointer font-bold">X</h>
+        </label>
+
+      <ul class="hidden peer-checked:flex peer-checked:flex-col md:peer-checked:flex-row md:flex gap-3 text-lg text-gray-500">
+        <li class="hover:text-primary"><a href="faq.html">Faq</a></li>
+        <li class="hover:text-primary"><a href="activities.html">Activities</a></li>
+        <li class="hover:text-primary"><a href="details.html">details</a></li>
+        <li class="hover:text-primary"><a href="home.html">Home</a></li>
+      </ul>
+      <a href="" class="hidden md:block bg-primary py-2 px-4 rounded-2xl font-semibold bg-amber-600 text-white hover:bg-[#36abd6]">
+        Plan your trip!
+      </a>
+      
+    </header>
+<body>  
 </body>
 </html>
