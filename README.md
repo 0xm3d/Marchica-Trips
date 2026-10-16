@@ -1,3 +1,0 @@
-# Marchica Trips
-
-test
