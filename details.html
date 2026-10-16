@@ -1,12 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
-</head>
-<body class="">
-    hello from details
-</body>
+  </head>
+  <body class="">
+    <header class="flex justify-between p-8 bg-white border-b border-primary">
+      <div>
+        <img src="./Images/Brand.svg" alt="logo" />
+      </div>
+      <input type="checkbox" id="menu" class="peer hidden" />
+      <label
+        for="menu"
+        class="block peer-checked:hidden cursor-pointer md:hidden"
+      >
+        <svg
+          class="peer-checked:hidden md:hidden"
+          viewBox="0 0 100 80"
+          width="40"
+          height="40"
+        >
+          <rect width="100" height="5"></rect>
+          <rect y="30" width="100" height="5"></rect>
+          <rect y="60" width="100" height="5"></rect>
+        </svg>
+      </label>
+
+      <label
+        for="menu"
+        class="hidden peer-checked:block cursor-pointer md:hidden"
+      >
+        <h class="text-4xl p-4 cursor-pointer font-bold">X</h>
+      </label>
+
+      <ul
+        class="hidden peer-checked:flex peer-checked:flex-col md:peer-checked:flex-row md:flex gap-3 text-lg text-gray-500"
+      >
+        <li class="hover:text-primary"><a href="faq.html">Faq</a></li>
+        <li class="hover:text-primary">
+          <a href="activities.html">Activities</a>
+        </li>
+        <li class="hover:text-primary"><a href="details.html">details</a></li>
+        <li class="hover:text-primary"><a href="home.html">Home</a></li>
+      </ul>
+
+      <button
+        class="hidden md:block bg-primary py-2 px-4 rounded-2xl font-semibold text-white hover:bg-[#36abd6]"
+      >
+        Plan your trip!
+      </button>
+    </header>
+
+    <main class="bg-of-white flex flex-col items-center">
+      <h1 class="text-4xl text-primary font-heading py-4">
+        Activities Detalis
+      </h1>
+      <section class="bg-of-white grid grid-cols-1 p-8 rounded-lg gap-6">
+        <div>
+          <h1 class="text-4xl text-primary font-heading py-4">Kyak Detalis</h1>
+
+          <div class="flex flex-col p-4 gap-3.5 bg-white shadow-lg">
+            <img
+              class="rounded-lg"
+              src="./Images/ex01.jpg"
+              alt="image of kyak"
+            />
+
+            <footer class="flex flex-col gap-2">
+              <section class="flex justify-between gap-12">
+                <div class="flex flex-col gap-4 p-2">
+                  <h1 class="text-2xl text-primary font-heading">Kyak</h1>
+                  <p class="text-text">
+                    Glissez en toute sérénité sur les eaux calmes et turquoises
+                    de la lagune ! Le kayak est l'activité parfaite pour
+                    explorer les coins secrets du littoral,<br />
+                    observer la nature préservée et profiter d'un moment de
+                    détente sportive à votre propre rythme. Embarquez pour une
+                    vraie bouffée d'air frais !
+                  </p>
+                </div>
+
+                <div class="flex flex-col gap-4 p-2">
+                  <h1 class="text-2xl text-primary font-heading">
+                    details Kyak
+                  </h1>
+                  <ul
+                    class="list-disc text-primary text-sm flex flex-col gap-3"
+                  >
+                    <li>Prix : 120 DH / personne</li>
+                    <li>Durée : 2 heures</li>
+                    <li>Lieu : Lagune de Marchica, Nador</li>
+                  </ul>
+                </div>
+              </section>
+
+              <div class="flex gap-3.5">
+                <button
+                  class="cursor-pointer bg-primary py-2 px-4 rounded-2xl font-semibold text-white hover:bg-[#36abd6]"
+                >
+                  Plan your trip!
+                </button>
+                <button class="border rounded-lg p-2 cursor-pointer">
+                  activitie
+                </button>
+              </div>
+            </footer>
+          </div>
+        </div>
+
+                <div>
+          <h1 class="text-4xl text-primary font-heading py-4">Boat Trip
+</h1>
+
+          <div class="flex flex-col p-4 gap-3.5 bg-white shadow-lg">
+            <img
+              class="rounded-lg"
+              src="./Images/ex02.jpg"
+              alt="image of kyak"
+            />
+
+            <footer class="flex flex-col gap-2">
+              <section class="flex justify-between gap-12">
+                <div class="flex flex-col gap-4 p-2">
+                  <h1 class="text-2xl text-primary font-heading">Boat Trip</h1>
+                  <p class="text-text">
+                    Glissez en toute sérénité sur les eaux calmes et turquoises
+                    de la lagune ! Le kayak est l'activité parfaite pour
+                    explorer les coins secrets du littoral,<br />
+                    observer la nature préservée et profiter d'un moment de
+                    détente sportive à votre propre rythme. Embarquez pour une
+                    vraie bouffée d'air frais !
+                  </p>
+                </div>
+
+                <div class="flex flex-col gap-4 p-2 ">
+                  <h1 class="text-2xl text-primary font-heading">
+                    details Boat Trip
+
+                  </h1>
+                  <ul
+                    class="list-disc text-primary text-sm flex flex-col gap-3"
+                  >
+                    <li>Prix : 120 DH / personne</li>
+                    <li>Durée : 2 heures</li>
+                    <li>Lieu : Lagune de Marchica, Nador</li>
+                  </ul>
+                </div>
+              </section>
+
+              <div class="flex gap-3.5">
+                <button
+                  class="cursor-pointer bg-primary py-2 px-4 rounded-2xl font-semibold text-white hover:bg-[#36abd6]"
+                >
+                  Plan your trip!
+                </button>
+                <button class="border rounded-lg p-2 cursor-pointer">
+                  activitie
+                </button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-sand p-6 flex flex-col flex-wrap">
+      <div class="flex justify-between flex-wrap">
+        <div class="flex flex-col items-start gap-4">
+          <img class="object-scale-down" src="./Images/Brand.svg" />
+          <p class="text-text">
+            Local journeys. Lasting memories.<br />
+            Your welcome to Nador and the Marchica Lagoon.
+          </p>
+          <img class="object-scale-down" src="./Images/Social links.svg" />
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h1 class="text-xl font-heading text-primary">Explore</h1>
+          <ul class="text-body text-gray-500 flex flex-col gap-2">
+            <li class="hover:text-primary"><a href="faq.html">Faq</a></li>
+            <li class="hover:text-primary">
+              <a href="activities.html">Activities</a>
+            </li>
+            <li class="hover:text-primary">
+              <a href="details.html">details</a>
+            </li>
+            <li class="hover:text-primary"><a href="home.html">Home</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h1 class="text-xl text-primary">Find us in Nador</h1>
+          <p class="text-text">
+            Marchica Lagoon <br />
+            Nador, Morocco
+          </p>
+          <a class="text-primary" href="test">Let's talk</a>
+        </div>
+      </div>
+
+      <div class="flex justify-between border-t mt-3.5 pt-3.5 border-primary">
+        <h5 class="text-text">© 2026 Marchica Trips. All rights reserved.</h5>
+        <h5 class="text-text">From Nador, with warmth.</h5>
+      </div>
+    </footer>
+  </body>
 </html>
